@@ -6,5 +6,9 @@ module.exports = {
     title: `razor-hollow-website`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-emotion"]
+  plugins: [
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp"
+  ]
 };
