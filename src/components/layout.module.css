@@ -1,11 +1,20 @@
+body {
+  background-color: #1F1F1F;
+}
+
+h1, h2, h3, h4, h5, p {
+  color: #CFCFCF;
+}
+
 .container {
-  margin: auto;
-  max-width: 500px;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1000px;
   font-family: sans-serif;
 }
 
 .heading {
-  color: rebeccapurple;
+  color: #E0E0E0;
 }
 .nav-links {
   display: flex;
@@ -16,7 +25,8 @@
   padding-right: 2rem;
 }
 .nav-link-text {
-  color: black;
+  color: #CFCFCF;
+  text-decoration: none;
 }
 
 .site-title {
