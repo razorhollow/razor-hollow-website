@@ -1,7 +1,18 @@
+h1 {
+  color: white;
+  font-weight: 900;
+}
+
+p {
+  font-weight: 100;
+  margin-top: 20px;
+}
+
 .hero {
   display: flex;
   flex-direction: row;
   margin: 20px 0;
+  padding: 40px;
 }
 
 .primary-button {
@@ -27,7 +38,7 @@
 .button-bar {
   display: flex;
   flex-direction: row;
-  margin-left: 0;
+  margin: 40px 0;
   padding-left: 0;
 }
 
@@ -35,14 +46,64 @@
   width: 40%;
 }
 
-.cardImg {
-  width: 40%;
+.imageContainer {
+  position: relative;
+  overflow: hidden;
 }
 
-@media (max-width: 798px) {
-  .container {
+.cardImg {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.cardImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(31, 31, 31, 0) 60%
+  );
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .hero {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+  }
+
+  .card {
+    width: 80%
+  }
+
+  .cardImg::before {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(31, 31, 31, 1) 0%,
+      rgba(31, 31, 31, 0) 60%
+    );
+  }
+
+  .cardImg {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+.button-bar {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .primary-button, .secondary-button {
+    width: 100%;
+    margin: 10px 0;
   }
 }

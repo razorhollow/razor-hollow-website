@@ -2,7 +2,7 @@ import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Container } from 'react-bootstrap'
 import * as styles from './Hero.module.css'
-import { Button, Card } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 
 
 const Hero = () => {
@@ -16,11 +16,13 @@ const Hero = () => {
           <Button className={styles.secondaryButton}>See Our Work</Button>
         </Container>
       </Container>
-      <StaticImage
-        alt="Driftboat Fly Fishing Guide"
-        src='https://images.unsplash.com/photo-1519443608216-0adf2e4a7515?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
-        className={styles.cardImg}
-      />
+      <Container className={styles.imageContainer}>
+        <StaticImage
+          alt="Driftboat Fly Fishing Guide"
+          src='https://images.unsplash.com/photo-1519443608216-0adf2e4a7515?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+          className={styles.cardImg}
+        />
+      </Container>
     </Container>
   )
 }
