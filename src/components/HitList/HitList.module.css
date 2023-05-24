@@ -1,0 +1,13 @@
+.svg {
+  width: 50px;
+  height: 'auto';
+}
+
+.fa-primary {
+  color: white;
+  opacity: 2;
+}
+
+.fa-secondary {
+  color: #116EFD;
+}

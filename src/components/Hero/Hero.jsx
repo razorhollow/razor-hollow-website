@@ -13,7 +13,7 @@ const Hero = () => {
         <p>At Razor Hollow, we are dedicated to helping your business stand out from the competition. We specialize in photography, web development, and video production that is tailored specifically to hunting and fishing guides. With our expert services, you can create high quality social media posts that will attract new customers and give your current clients something to rave about.</p>
         <Container className={styles.buttonBar}>
           <Button className={styles.primaryButton}>Get In Touch</Button>
-          <Button className={styles.secondaryButton}>See Our Work</Button>
+          <Button className={styles.secondaryButton}>What We Do</Button>
         </Container>
       </Container>
       <Container className={styles.imageContainer}>

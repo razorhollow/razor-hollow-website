@@ -17,7 +17,23 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/
+        }
+      }
+    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    {
+      resolve: '@fortawesome/fontawesome-svg-core',
+      options: {
+        pro: true,
+        familyPrefix: process.env.FA_TOKEN,
+      },
+    },
+    
   ]
 };

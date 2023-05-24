@@ -4,12 +4,14 @@ import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import Hero from '../components/Hero/Hero'
+import HitList from '../components/HitList/HitList'
 
 // Step 2: Define your component
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
       <Hero />
+      <HitList />
       <StaticImage  
         alt='Waterfowl Hunting Guide'
         src='../images/rhett-noonan-799IZNkVopA-unsplash.jpg'
