@@ -12,10 +12,10 @@ const IndexPage = () => {
     <Layout pageTitle="Home Page">
       <Hero />
       <HitList />
-      <StaticImage  
-        alt='Waterfowl Hunting Guide'
-        src='../images/rhett-noonan-799IZNkVopA-unsplash.jpg'
-      />
+      {/* <StaticImage   */}
+        {/* alt='Waterfowl Hunting Guide' */}
+        {/* src='../images/rhett-noonan-799IZNkVopA-unsplash.jpg' */}
+      {/* /> */}
     </Layout>
   )
 }
