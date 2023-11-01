@@ -31,7 +31,7 @@ module.exports = {
       resolve: '@fortawesome/fontawesome-svg-core',
       options: {
         pro: true,
-        familyPrefix: process.env.FA_TOKEN,
+        familyPrefix: process.env.FONTAWESOME_NPM_TOKEN,
       },
     },
     

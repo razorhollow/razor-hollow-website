@@ -1,5 +1,7 @@
 body {
-  background-color: #1F1F1F;
+  background-color: #4d4855;
+  background-image: linear-gradient(350deg, #4d4855 0%, #000000 74%);
+
 }
 
 h1, h2, h3, h4, h5, p {

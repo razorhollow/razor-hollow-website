@@ -1,9 +1,11 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const HitListItem = (props) => {
+const HitListItem = ({ icon, tagline }) => {
   return (
-    <div>
-      <h2>Is this working? | {props.icon} {props.saying}</h2>
+    <div className="feature-item">
+      <FontAwesomeIcon icon={icon} />
+      <span>{tagline}</span>
     </div>
   )
 }
