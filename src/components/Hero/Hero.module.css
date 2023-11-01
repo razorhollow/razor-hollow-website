@@ -11,8 +11,6 @@ p {
 .hero {
   display: flex;
   flex-direction: row;
-  margin: 20px 0;
-  padding: 40px;
 }
 
 .primary-button {
@@ -48,7 +46,7 @@ p {
 
 .imageContainer {
   position: relative;
-  overflow: hidden;
+  width: 100%;
 }
 
 .cardImg {

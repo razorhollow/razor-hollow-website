@@ -5,8 +5,10 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import Hero from '../components/Hero/Hero'
 import HitList from '../components/HitList/HitList'
+import { library, dom } from '@fortawesome/fontawesome-svg-core'
 
-// Step 2: Define your component
+dom.watch()
+
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
